@@ -14,14 +14,14 @@
             <form>
                 <label for="uname">Username</label>
                 <input type="text" id="uname" name="username" placeholder="Username">
-                <input onclick="submit()" type="submit" id="unsub" name="usernamesubmit" value="Submit">
+                <input onclick="submituname()" type="submit" id="unsub" name="usernamesubmit" value="Submit">
             </form>
         </div>
 
         <p id="print">Your Username is:</p>
 
         <script>
-            function submit() {
+            function submituname() {
                 let uname = document.getElementById("uname").value;
                 document.getElementById("print").innerHTML = "Your Username is: hi";
             }
