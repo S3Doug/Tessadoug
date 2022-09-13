@@ -22,11 +22,15 @@
         <p id="print">Your Username is:</p>
 
         <script>
-            const crypto = require('crypto');
             function hash(str) {
-                return crypto('sha256').update(str).digest('hex');
+                const utf8 = new TextEncoder().encode(string);
+                return crypto.subtle.digest('SHA-256', utf8).then((hashBuffer) => {
+                    const hashArray = Array.from(new Uint8Array(hashBuffer));
+                    const hashHex = hashArray.map((bytes) => bytes.toString(16).padStart(2, '0')).join('');
+                    return hashHex;
+                });
             }
-            console.log(hash('foo'))
+            hash('foo').then((hex) => console.log(hex));
             function submituname() {
                 let uname = document.getElementById("uname").value;
                 localStorage.setItem("Username", uname);
