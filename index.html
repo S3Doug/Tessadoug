@@ -18,13 +18,12 @@
             </form>
         </div>
 
-        <p>Your Username is:</p>
-        <p id="print"> </p>
+        <p id="print">Your Username is:</p>
 
         <script>
             function submit() {
                 let uname = document.getElementById("uname").value;
-                document.getElementById("print").innerHTML = str.uname;
+                document.getElementById("print").innerHTML = "Your Username is: ", uname;
             }
         </script>
 
