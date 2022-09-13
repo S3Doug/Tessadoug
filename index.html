@@ -22,6 +22,7 @@
         <p id="print">Your Username is:</p>
 
         <script>
+            const crypto = require('crypto');
             function submituname() {
                 let uname = document.getElementById("uname").value;
                 localStorage.setItem("Username", uname);
