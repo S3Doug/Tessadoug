@@ -23,6 +23,10 @@
 
         <script>
             const crypto = require('crypto');
+            function hash(str) {
+                return crypto('sha256').update(str).digest('hex');
+            }
+            console.log(hash('foo'))
             function submituname() {
                 let uname = document.getElementById("uname").value;
                 localStorage.setItem("Username", uname);
