@@ -13,6 +13,7 @@
                 <label for="uname">Username</label>
                 <input type="text" id="uname" name="username" placeholder="Username">
             </form>
+            <p>Your username is: <?php echo $_POST["username"];?></p>
         </div>
     </body>
 </html>
