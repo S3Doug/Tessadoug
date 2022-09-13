@@ -13,13 +13,12 @@
         <div>
             <form autocomplete="off">
                 <label for="uname">Username</label>
-                <input type="password" id="uname" name="username" placeholder="Username">
-                <input onclick="submituname()" type="button" id="unsub" name="usernamesubmit" value="Submit">
-                <input onclick="changehtml()" type="button" id="btn" name="Button" value="Click me">
+                <input type="text" id="uname" name="username" placeholder="Username"><br>
+                <label for="passw">Password</label>
+                <input type="password" id="passw" name="password" placeholder="Password"><br>
+                <input onclick="check()" type="button" id="pwsub" name="passwordsubmit" value="Submit">
             </form>
         </div>
-
-        <p id="print">Your Username is:</p>
 
         <script>
             function hash(str) {
@@ -30,13 +29,12 @@
                     return hashHex;
                 });
             }
-            hash('foo').then((hex) => console.log(hex));
-            function submituname() {
+
+            function check() {
                 let uname = document.getElementById("uname").value;
-                localStorage.setItem("Username", uname);
-            }
-            function changehtml() {
-                document.getElementById("print").innerHTML = localStorage.getItem("Username");
+                let passw = document.getElementById("passw").value;
+                hash(uname).then((hex) => sessionStorage.setItem("Username", hex));
+                hash(passw).then((hex) => sessionStorage.setItem("Password", hex));
             }
         </script>
 
