@@ -17,12 +17,12 @@
             </form>
         </div>
 
-        <p id="print">Your username is:</p>
+        <p>Your username is:<p id="print"> </p></p>
 
         <script>
             var uname = document.getElementById("uname");
             localStorage.setItem("Username", uname);
-            document.getElementById("print").innerHTML("Your username is:", localStorage.getItem("Username"));
+            document.getElementById("print").innerHTML = localStorage.getItem("Username");
         </script>
 
     </body>
