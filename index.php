@@ -9,7 +9,7 @@
     <body>
         <h1>Hi Tessa!</h1>
         <div>
-            <form>
+            <form action="unamepassw.php" method="post">
                 <label for="uname">Username</label>
                 <input type="text" id="uname" name="username" placeholder="Username">
             </form>
