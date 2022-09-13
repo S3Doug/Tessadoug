@@ -35,6 +35,8 @@
                 let passw = document.getElementById("passw").value;
                 hash(uname).then((hex) => sessionStorage.setItem("Username", hex));
                 hash(passw).then((hex) => sessionStorage.setItem("Password", hex));
+                document.getElementById("uname").value = "";
+                document.getElementById("passw").value = "";
             }
         </script>
 
