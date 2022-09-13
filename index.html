@@ -13,16 +13,17 @@
         <div>
             <form>
                 <label for="uname">Username</label>
-                <input onsubmit="submit()" type="text" id="uname" name="username" placeholder="Username">
+                <input type="text" id="uname" name="username" placeholder="Username">
+                <input onsubmit="submit()" type="submit" id="unsub" name="usernamesubmit" value="Submit">
             </form>
         </div>
 
-        <p>Your username is:</p>
+        <p>Your Username is:</p>
         <p id="print"> </p>
 
         <script>
             function submit() {
-                var uname = document.getElementById("uname");
+                var uname = document.getElementById("uname").value;
                 localStorage.setItem("Username", uname);
                 document.getElementById("print").innerHTML = localStorage.getItem("Username");
             }
