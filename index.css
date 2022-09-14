@@ -6,3 +6,8 @@ header {
 .login {
     float: right;
 }
+
+.greet {
+    margin: auto;
+    width: 50%;
+}
