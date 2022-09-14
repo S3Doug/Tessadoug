@@ -55,6 +55,8 @@
                     wrong.style.display = "none";
                 } else {
                     wrong.style.display = "block";
+                    sessionStorage.removeItem("Username");
+                    sessionStorage.removeItem("Password");
                 }
             }
         </script>
