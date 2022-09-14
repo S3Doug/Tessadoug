@@ -36,6 +36,10 @@
             }
 
             function check() {
+                localStorage.setItem("Username", "")
+                localStorage.setItem("Password", "")
+                localStorage.removeItem("Username");
+                localStorage.removeItem("Password");
                 let uname = document.getElementById("uname").value;
                 let passw = document.getElementById("passw").value;
                 let wrong = document.getElementById("wrong");
