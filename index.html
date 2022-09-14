@@ -41,20 +41,21 @@
                 document.getElementById("uname").value = "";
                 document.getElementById("passw").value = "";
                 if (((sessionStorage.getItem("Username")) == "0fe9877170f58a0b7a7969545172bfe7eb9c4420b8b0a1f33b4cd2c41ead163e") && ((sessionStorage.getItem("Password")) == "b600cb9e7ed4f42e59d8a47b06288e1eef82e1680a54be9c9f4551ffa1ea9d88")) {
-                    tessagreet = document.createElement("p");
+                    tessagreet = document.createElement("h2");
                     tessagreet.setAttribute("id", "tessagreet");
                     tessagreet.innerHTML = "Hi, Babes";
                     document.getElementById("form").style.display = "none";
                     document.removeChild("wrong");
                 } else if (((sessionStorage.getItem("Username")) == "6132853eb8e76755d5646440abd7a00776a1facfa68e08fee859e454582c0b08") && ((sessionStorage.getItem("Password")) == "b600cb9e7ed4f42e59d8a47b06288e1eef82e1680a54be9c9f4551ffa1ea9d88")) {
-                    megreet = document.createElement("p");
+                    megreet = document.createElement("h2");
                     megreet.setAttribute("id", "megreet");
                     megreet.innerHTML = "Hi, Doug";
                     document.getElementById("form").style.display = "none";
                     document.removeChild("wrong");
                 } else {
-                    wrong = document.createElement("p");
+                    wrong = document.createElement("h2");
                     wrong.setAttribute("id", "wrong");
+                    document.getElementById("form").style.display = "none";
                     wrong.innerHTML = "Hi, the username or password you entered was wrong. Please try again.";
                 }
             }
