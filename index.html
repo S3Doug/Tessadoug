@@ -47,8 +47,8 @@
                 let tessagreet = document.getElementById("tessagreet");
                 var username;
                 var password;
-                await hash(uname).then((hex) => username);
-                await hash(passw).then((hex) => password);
+                await hash(uname).then((hex) => username = hex);
+                await hash(passw).then((hex) => password = hex);
                 document.getElementById("uname").value = "";
                 document.getElementById("passw").value = "";
                 if ((username == "0fe9877170f58a0b7a7969545172bfe7eb9c4420b8b0a1f33b4cd2c41ead163e") && (password == "b600cb9e7ed4f42e59d8a47b06288e1eef82e1680a54be9c9f4551ffa1ea9d88")) {
