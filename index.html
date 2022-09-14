@@ -36,20 +36,22 @@
             }
 
             function check() {
-                localStorage.setItem("Username", "")
+                /*localStorage.setItem("Username", "")
                 localStorage.setItem("Password", "")
                 localStorage.removeItem("Username");
-                localStorage.removeItem("Password");
+                localStorage.removeItem("Password");*/
                 let uname = document.getElementById("uname").value;
                 let passw = document.getElementById("passw").value;
                 let wrong = document.getElementById("wrong");
                 let megreet = document.getElementById("megreet");
                 let tessagreet = document.getElementById("tessagreet");
-                hash(uname).then((hex) => localStorage.setItem("Username", hex));
-                hash(passw).then((hex) => localStorage.setItem("Password", hex));
+                var username;
+                var password;
+                hash(uname).then((hex) => username);
+                hash(passw).then((hex) => password);
                 document.getElementById("uname").value = "";
                 document.getElementById("passw").value = "";
-                if (((localStorage.getItem("Username")) == "0fe9877170f58a0b7a7969545172bfe7eb9c4420b8b0a1f33b4cd2c41ead163e") && ((localStorage.getItem("Password")) == "b600cb9e7ed4f42e59d8a47b06288e1eef82e1680a54be9c9f4551ffa1ea9d88")) {
+                if ((username == "0fe9877170f58a0b7a7969545172bfe7eb9c4420b8b0a1f33b4cd2c41ead163e") && (password == "b600cb9e7ed4f42e59d8a47b06288e1eef82e1680a54be9c9f4551ffa1ea9d88")) {
                     tessagreet.style.display = "block";
                     document.getElementById("form").style.display = "none";
                     wrong.style.display = "none";
@@ -59,8 +61,8 @@
                     wrong.style.display = "none";
                 } else {
                     wrong.style.display = "block";
-                    localStorage.removeItem("Username");
-                    localStorage.removeItem("Password");
+                    /*localStorage.removeItem("Username");
+                    localStorage.removeItem("Password");*/
                 }
             }
         </script>
