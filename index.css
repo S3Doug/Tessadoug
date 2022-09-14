@@ -4,10 +4,7 @@ header {
 }
 
 .login {
-    float: right;
-}
-
-.greet {
-    margin: auto;
-    width: 50%;
+    position: absolute;
+    right: 10px;
+    top: 20px;
 }
