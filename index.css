@@ -1,10 +1,10 @@
 header {
+    width: 50%;
     background-color: aqua;
     text-align: center;
 }
 
-.login {
-    position: absolute;
-    right: 10px;
-    top: 20px;
+nav {
+    float: right;
+    width: 10%;
 }
