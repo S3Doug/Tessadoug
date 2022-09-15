@@ -2,10 +2,12 @@ header {
     position: relative;
     background-color: aqua;
     text-align: center;
+    width: 100%;
 }
 
 header .login {
     position: absolute;
     top: 50%;
-    right: 1%;
+    transform: translate(0,-50%);
+    right: 2%;
 }
