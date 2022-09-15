@@ -1,10 +1,11 @@
 header {
+    position: relative;
     background-color: aqua;
     text-align: center;
 }
 
 header .login {
-    position: relative;
+    position: absolute;
     top: 50%;
     right: 1%;
 }
