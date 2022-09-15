@@ -9,16 +9,17 @@
         <script type="text/javascript" src="index.js"></script>
     </head>
 
-    <body>
+    <body onload="checklogin()">
 
         <header>
             <div class="greet">
                 <h1>Hi Tessa!</h1>
             </div>
-            
+
             <div class="login">
+                <p style="display:none" id="name"></p>
                 <a href="login.html">
-                <input type="button" name="login" value="Login">
+                <input type="button" id="login" name="login" value="Login">
                 </a>
             </div>
         </header>
