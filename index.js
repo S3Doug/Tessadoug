@@ -23,23 +23,23 @@ async function check() {
         tessagreet.style.display = "block";
         document.getElementById("form").style.display = "none";
         wrong.style.display = "none";
-        sessionStorage.setItem("login", true);
-        sessionStorage.setItem("who", "Tessa");
+        localStorage.setItem("login", true);
+        localStorage.setItem("who", "Tessa");
     } else if ((username == "6132853eb8e76755d5646440abd7a00776a1facfa68e08fee859e454582c0b08") && (password == "b600cb9e7ed4f42e59d8a47b06288e1eef82e1680a54be9c9f4551ffa1ea9d88")) {
         megreet.style.display = "block";
         document.getElementById("form").style.display = "none";
         wrong.style.display = "none";
-        sessionStorage.setItem("login", true);
-        sessionStorage.setItem("who", "Douglas");
+        localStorage.setItem("login", true);
+        localStorage.setItem("who", "Douglas");
     } else {
         wrong.style.display = "block";
     }
 }
 
 function checklogin() {
-    if (sessionStorage.getItem("login") == true) {
+    if (localStorage.getItem("login") == true) {
         document.getElementById("login").style.display = "none";
         document.getElementById("name").style.display = "block";
-        document.getElementById("name").innerHTML = sessionStorage.getItem("who");
+        document.getElementById("name").innerHTML = localStorage.getItem("who");
     }
 }
