@@ -1,8 +1,13 @@
 header {
     position: relative;
-    background-color: aqua;
-    text-align: center;
     width: 100%;
+    text-align: center;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
 }
 
 header .login {
