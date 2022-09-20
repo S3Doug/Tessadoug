@@ -1,12 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-image: url("Header.jpg");
-    height: 40px;
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     width: 100%;
+}
+
+header .greet {
     text-align: center;
+    position: relative;
+    padding: 1%;
+    width: 98%;
 }
 
 header .login {
