@@ -4,12 +4,6 @@ header {
     text-align: center;
 }
 
-img { 
-    width: 100%;
-    height: auto;
-    opacity: 0.3;
-}
-
 header .login {
     position: absolute;
     top: 50%;
