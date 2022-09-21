@@ -4,14 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --green: rgba(0, 85, 8);
+    --periwinkle: rgba(204, 204, 255);
+    --periopa: rgba(204, 204, 255, 0.2);
+}
+
 body {
-    background: rgba(204, 204, 255, 0.2);
+    background: var(--periopa);
 }
 
 header {
     position: fixed;
     width: 100%;
-    color: rgba(0, 85, 8);
+    color: var(--green);
 }
 
 header .greet {
@@ -33,8 +39,8 @@ header h1 {
 }
 
 header .loginbtn {
-    background-color: rgba(0, 85, 8);
-    color: rgba(204, 204, 255);
+    background-color: var(--green);
+    color: var(--periwinkle);
     border: none;
     padding: 11px 24px;
     text-align: center;
