@@ -7,40 +7,39 @@
 :root {
     --green: rgba(0, 85, 8);
     --periwinkle: rgba(204, 204, 255);
-    --periopa: rgba(204, 204, 255, 0.2);
+    --periopa: rgba(204, 204, 255, 0.1);
 }
 
 body {
     background: var(--periopa);
 }
 
-header {
+header .index {
     position: fixed;
     width: 100%;
-    color: var(--green);
 }
 
-header .greet {
+.index .greet {
     text-align: center;
     position: relative;
     padding: 1%;
     width: 98%;
 }
 
-header .login {
+.index .login {
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
     right: 1%;
 }
 
-header h1 {
+.index h1 {
     font-size: 36px;
 }
 
-header .loginbtn {
+.index .loginbtn {
     background-color: var(--green);
-    color: var(--periwinkle);
+    color: white;
     border: none;
     padding: 11px 24px;
     text-align: center;
