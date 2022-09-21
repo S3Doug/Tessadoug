@@ -32,7 +32,7 @@ header h1 {
     font-size: 36px;
 }
 
-header #login {
+header .loginbtn {
     background-color: rgba(0, 85, 8);
     color: rgba(204, 204, 255);
     border: none;
