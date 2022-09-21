@@ -1,8 +1,7 @@
-div {
+section .login {
     text-align: center;
 }
 
-header {
+header .login {
     text-align: center;
-    background-color: aquamarine;
 }

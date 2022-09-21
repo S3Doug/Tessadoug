@@ -26,7 +26,7 @@ header .index {
     width: 98%;
 }
 
-.index .login {
+.index .loginlink {
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
@@ -37,7 +37,7 @@ header .index {
     font-size: 36px;
 }
 
-.index .loginbtn {
+.btn {
     background-color: var(--green);
     color: white;
     border: none;
@@ -45,4 +45,12 @@ header .index {
     text-align: center;
     font-size: 12px;
     cursor: pointer;
+}
+
+section .login {
+    text-align: center;
+}
+
+header .login {
+    text-align: center;
 }
