@@ -10,11 +10,11 @@
     </head>
 
     <body>
-        <header class="login">
+        <header class="login header">
             <h1>Login</h1>
         </header>
 
-        <section class="login">
+        <section class="login section">
             <div class="input">
                 <br>
                 <form id="form" autocomplete="off">
@@ -22,16 +22,21 @@
                     <input type="text" id="uname" name="username" placeholder="Username"><br>
                     <label for="passw">Password</label>
                     <input type="password" id="passw" name="password" placeholder="Password"><br>
-                    <input onclick="check()" type="button" id="pwsub" name="passwordsubmit" value="Submit">
+                    <input onclick="check()" type="button" class="btn" name="submit" value="Submit">
                 </form>
             </div>
-            <div class="backbtn">
-                <a href="index.html">
-                    <input class="btn" type="button" name="back" value="Back">
-                </a>
+
+            <div class="response">
                 <p id="tessagreet" style="display:none">Hi, Babes!</p>
                 <p id="megreet" style="display:none">Hi, me</p>
                 <p id="wrong" style="display:none">Hi, the username or password you entered was wrong. Please try again.</p>
+            </div>
+
+            <div class="backbtn">
+                <br>
+                <a href="index.html">
+                    <input class="btn" type="button" name="back" value="Back">
+                </a>
             </div>
         </section>
 

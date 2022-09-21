@@ -14,7 +14,7 @@ body {
     background: var(--periopa);
 }
 
-header .index {
+.index .header {
     position: fixed;
     width: 100%;
 }
@@ -47,10 +47,25 @@ header .index {
     cursor: pointer;
 }
 
-section .login {
+.header .login {
+    position: relative;
+    width: 98%;
+    padding: 1%;
     text-align: center;
 }
 
-header .login {
+.login h1 {
+    font-size: 36px;
+}
+
+.login .section {
+    position: relative;
+    width: 98%;
+    padding: 1%;
     text-align: center;
+}
+
+.login .input {
+    top: auto;
+    left: auto;
 }
