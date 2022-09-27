@@ -67,7 +67,11 @@ function logout() {
 }
 
 function loggedin() {
-    document.getElementById("dropdown").style.display = "block";
+    if (document.getElementById("dropdown").style.display == "none") {
+        document.getElementById("dropdown").style.display = "block";
+    } else {
+        document.getElementById("dropdown").style.display = "none";
+    }
 }
 
 
