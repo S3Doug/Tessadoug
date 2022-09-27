@@ -43,20 +43,24 @@ async function check() {
 function checklogin() {
     if (sessionStorage.getItem("login")) {
         let loggedin = sessionStorage.getItem("login");
-        if (loggedin == true) {
+        if (loggedin) {
             var who = sessionStorage.getItem("who");
             document.getElementById("login").style.display = "none";
             document.getElementById("name").style.display = "block";
             document.getElementById("name").innerHTML = who;
         }
+    } else {
+        sessionStorage.setItem("login", false);
+        sessionStorage.setItem("who", "");
     }
 }
 
 /* logs the user out */
 function logout() {
-    sessionStorage.clear();
     document.getElementById("login").style.display = "block";
     document.getElementById("name").style.display = "none";
+    sessionStorage.setItem("login", false);
+    sessionStorage.setItem("who", "");
 }
 
 
