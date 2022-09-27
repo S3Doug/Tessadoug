@@ -41,8 +41,10 @@ async function check() {
 
 /* passes the login information to the main page */
 async function checklogin() {
-    let loggedin = await sessionStorage.getItem("login");
-    if (loggedin == true) {
+    let loggedin = new Promise(function(yes) {
+        yes(sessionStorage.getItem("login"));
+    });
+    if (await loggedin == true) {
         var who = sessionStorage.getItem("who");
         document.getElementById("login").style.display = "none";
         document.getElementById("name").style.display = "block";
