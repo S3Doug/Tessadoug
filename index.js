@@ -41,8 +41,6 @@ async function check() {
 
 /* passes the login information to the main page */
 function checklogin() {
-    document.getElementById("login").style.display = "block";
-    document.getElementById("name").style.display = "none";
     var loggedin = sessionStorage.getItem("login");
     if (loggedin == true) {
         var who = sessionStorage.getItem("who");
@@ -54,8 +52,8 @@ function checklogin() {
 
 /* logs the user out */
 function logout() {
-    sessionStorage.setItem("login", false);
-    sessionStorage.setItem("who", "");
+    sessionStorage.removeItem("login");
+    sessionStorage.removeItem("who");
     document.getElementById("login").style.display = "block";
     document.getElementById("name").style.display = "none";
 }
