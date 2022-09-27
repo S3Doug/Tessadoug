@@ -50,6 +50,15 @@ body { /* sets the background-color of the body */
     right: 1%;
 }
 
+.index.header .name{
+    color: white;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    padding: 11px 24px;
+    text-align: center;
+    font-size: 12px;
+}
+
 .index.header h1 {
     /* css for the "title", font size is 36 pixels */
     font-size: 36px;
