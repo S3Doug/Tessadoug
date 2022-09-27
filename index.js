@@ -36,10 +36,10 @@ async function check() {
     }
 }
 
-function checklogin() {
+/*function checklogin() {
     if (localStorage.getItem("login") == true) {
         document.getElementById("login").style.display = "none";
         document.getElementById("name").style.display = "block";
         document.getElementById("name").innerHTML = localStorage.getItem("who");
     }
-}
+}*/

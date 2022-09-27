@@ -1,43 +1,20 @@
-* {
+* { /* makes sure everything has no margin or padding */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
-:root {
+:root { /* sets the theme colors to easy to call names */
     --green: rgba(0, 85, 8);
     --periwinkle: rgba(204, 204, 255);
     --periopa: rgba(204, 204, 255, 0.1);
 }
 
-body {
+body { /* sets the background-color of the body */
     background: var(--periopa);
 }
 
-.index .header {
-    position: fixed;
-    width: 100%;
-}
-
-.index .greet {
-    text-align: center;
-    position: relative;
-    padding: 1%;
-    width: 98%;
-}
-
-.index .loginlink {
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    right: 1%;
-}
-
-.index h1 {
-    font-size: 36px;
-}
-
-.btn {
+.btn { /* sets the design of every button */
     background-color: var(--green);
     color: white;
     border: none;
@@ -47,18 +24,56 @@ body {
     cursor: pointer;
 }
 
-.header .login {
-    position: relative;
-    width: 98%;
-    padding: 1%;
+/* sets the css for the main/index page */
+.index .header { 
+    /* css for the header, fixed to the top and 100% width */
+    position: fixed;
+    width: 100%;
+}
+
+.index .greet { 
+    /* css for the greeting, centered text, relative position, padding + width is 100% */
     text-align: center;
+    position: relative;
+    padding: 1%;
+    width: 98%;
+}
+
+.index .loginlink {
+    /* css for the login div, absolute position, vertically centered, all the way to the right */
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 1%;
+}
+
+.index h1 {
+    /* css for the "title", font size is 36 pixels */
+    font-size: 36px;
+}
+
+
+/* sets the css for the login page */
+.login .header {
+    /* css for the header, position relative, padding+width is 100%, centered text */
+    position: fixed;
+    width: 100%;
+}
+
+.login .greet {
+    text-align: center;
+    position: relative;
+    padding: 1%;
+    width: 98%;
 }
 
 .login h1 {
+    /* css for the "title", font size is 36 pixels */
     font-size: 36px;
 }
 
 .login .section {
+    /* css for the login section, position relative, width+padding is 100%, centered text */
     position: relative;
     width: 98%;
     padding: 1%;
@@ -66,6 +81,7 @@ body {
 }
 
 .login .input {
+    /* css for the form div, "centered" */
     top: auto;
     left: auto;
 }

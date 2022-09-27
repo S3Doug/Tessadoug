@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-    <head>
+    <head> <!-- The login page -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tessa + Doug</title>
+        <title>Login</title>
         <link rel="stylesheet" href="index.css">
         <script type="text/javascript" src="index.js"></script>
     </head>
 
     <body>
-        <header class="login header">
-            <h1>Login</h1>
+        <header class="login header"> <!-- The "title" -->
+            <div class="greet">
+                <h1>Login</h1>
+            </div>
         </header>
 
-        <section class="login section">
-            <div class="input">
+        <section class="login section"> <!-- The section to login -->
+
+            <div class="input"> <!-- The div/form to input the username and password -->
                 <br>
                 <form id="form" autocomplete="off">
                     <label for="uname">Username</label>
@@ -26,13 +29,13 @@
                 </form>
             </div>
 
-            <div class="response">
+            <div class="response"> <!-- The response based off the login attempt -->
                 <p id="tessagreet" style="display:none">Hi, Babes!</p>
                 <p id="megreet" style="display:none">Hi, me</p>
                 <p id="wrong" style="display:none">Hi, the username or password you entered was wrong. Please try again.</p>
             </div>
 
-            <div class="backbtn">
+            <div class="backbtn"> <!-- a button to go back to the main page -->
                 <br>
                 <a href="index.html">
                     <input class="btn" type="button" name="back" value="Back">
