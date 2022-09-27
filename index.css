@@ -50,13 +50,8 @@ body { /* sets the background-color of the body */
     right: 1%;
 }
 
-.index.header .name{
-    border: 2px solid var(--green);
-    border-radius: 5px;
-    padding: 11px 24px;
-    text-align: center;
-    font-size: 12px;
-    cursor: pointer;
+.index.header .name {
+    display: none;
 }
 
 .index.header h1 {
