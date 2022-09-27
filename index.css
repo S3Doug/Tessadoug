@@ -28,8 +28,9 @@ body { /* sets the background-color of the body */
 
 /* sets the css for the header */
 .index.header { 
-    /* css for the header, fixed to the top and 100% width */
-    position: fixed;
+    /* css for the header, sticky to the top and 100% width */
+    position: -webkit-sticky;
+    position: sticky;
     width: 100%;
 }
 
@@ -59,8 +60,9 @@ body { /* sets the background-color of the body */
 
 /* sets the css for the header */
 .login.header {
-    /* css for the header, position fixed, width is 100% */
-    position: fixed;
+    /* css for the header, position sticky, width is 100% */
+    position: -webkit-sticky;
+    position: sticky;
     width: 100%;
 }
 
