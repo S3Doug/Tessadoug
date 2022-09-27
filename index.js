@@ -61,6 +61,7 @@ function checklogin() {
 function logout() {
     document.getElementById("login").style.display = "block";
     document.getElementById("name").style.display = "none";
+    document.getElementById("dropdown").style.display = "none";
     sessionStorage.setItem("login", "false");
     sessionStorage.setItem("who", "");
 }
