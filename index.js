@@ -65,4 +65,8 @@ function logout() {
     sessionStorage.setItem("who", "");
 }
 
+function loggedin() {
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
 

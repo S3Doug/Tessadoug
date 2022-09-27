@@ -7,7 +7,7 @@
 :root { /* sets the theme colors to easy to call names */
     --green: rgba(0, 85, 8);
     --periwinkle: rgba(204, 204, 255);
-    --periopa: rgba(204, 204, 255, 0.1);
+    --periopa: rgba(204, 204, 255, 0.3);
 }
 
 body { /* sets the background-color of the body */
@@ -53,6 +53,23 @@ body { /* sets the background-color of the body */
 .index.header .name {
     display: none;
 }
+
+.index.header .name-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.index.header .name-content button {
+    background-color: var(--periwinkle);
+    display: block;
+    padding: 11px 24px;
+    cursor: pointer;
+}
+
+.show {display:block;}
 
 .index.header h1 {
     /* css for the "title", font size is 36 pixels */
