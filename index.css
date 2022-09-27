@@ -69,8 +69,6 @@ body { /* sets the background-color of the body */
     cursor: pointer;
 }
 
-.show {display:block;}
-
 .index.header h1 {
     /* css for the "title", font size is 36 pixels */
     font-size: 36px;
