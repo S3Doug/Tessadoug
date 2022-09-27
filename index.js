@@ -48,6 +48,9 @@ function checklogin() {
             document.getElementById("login").style.display = "none";
             document.getElementById("name").style.display = "block";
             document.getElementById("name").innerHTML = who;
+        } else {
+            document.getElementById("login").style.display = "block";
+            document.getElementById("name").style.display = "none";
         }
     } else {
         sessionStorage.setItem("login", false);
