@@ -56,6 +56,7 @@ body { /* sets the background-color of the body */
     padding: 11px 24px;
     text-align: center;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .index.header h1 {
