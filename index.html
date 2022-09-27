@@ -9,7 +9,7 @@
         <script type="text/javascript" src="index.js"></script>
     </head>
 
-    <body>
+    <body onload="checklogin()">
         <!-- Header of the page, includes the "title" and login button -->
         <header class="index header">
             <div class="greet">
@@ -17,9 +17,9 @@
                 
                 <!-- The div that holds the login button -->
                 <div class="loginlink">
-                    <!-- <p style="display:none" id="name"></p> -->
-                    <a href="login.html"> <!-- the login button -->
-                    <input type="button" class="loginbtn btn" name="login" value="Login">
+                    <p style="display:none" id="name"></p>
+                    <a href="login.html" id="login"> <!-- the login button -->
+                        <input type="button" class="loginbtn btn" name="login" value="Login">
                     </a>
                 </div>
             </div>
