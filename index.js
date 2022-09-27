@@ -1,6 +1,3 @@
-sessionStorage.setItem("login", false);
-sessionStorage.setItem("who", "");
-
 
 /* a function to hash an input */
 function hash(str) {
@@ -44,19 +41,20 @@ async function check() {
 
 /* passes the login information to the main page */
 function checklogin() {
-    let loggedin = sessionStorage.getItem("login");
-    if (loggedin == true) {
-        var who = sessionStorage.getItem("who");
-        document.getElementById("login").style.display = "none";
-        document.getElementById("name").style.display = "block";
-        document.getElementById("name").innerHTML = who;
+    if (sessionStorage.getItem("login")) {
+        let loggedin = sessionStorage.getItem("login");
+        if (loggedin == true) {
+            var who = sessionStorage.getItem("who");
+            document.getElementById("login").style.display = "none";
+            document.getElementById("name").style.display = "block";
+            document.getElementById("name").innerHTML = who;
+        }
     }
 }
 
 /* logs the user out */
 function logout() {
-    sessionStorage.setItem("login", false);
-    sessionStorage.setItem("who", "");
+    sessionStorage.clear();
     document.getElementById("login").style.display = "block";
     document.getElementById("name").style.display = "none";
 }
