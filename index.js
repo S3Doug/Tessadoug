@@ -39,6 +39,7 @@ async function check() {
     }
 }
 
+/* passes the login information to the main page */
 function checklogin() {
     var loggedin = sessionStorage.getItem("login");
     if (loggedin) {
@@ -48,3 +49,13 @@ function checklogin() {
         document.getElementById("name").innerHTML = who;
     }
 }
+
+/* logs the user out */
+function logout() {
+    sessionStorage.setItem("login", false);
+    sessionStorage.setItem("who", "");
+    document.getElementById("login").style.display = "block";
+    document.getElementById("name").style.display = "none";
+}
+
+

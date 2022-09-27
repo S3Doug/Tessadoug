@@ -51,7 +51,6 @@ body { /* sets the background-color of the body */
 }
 
 .index.header .name{
-    color: white;
     border: 2px solid var(--green);
     border-radius: 5px;
     padding: 11px 24px;
