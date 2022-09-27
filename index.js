@@ -44,7 +44,7 @@ function checklogin() {
     document.getElementById("login").style.display = "block";
     document.getElementById("name").style.display = "none";
     var loggedin = sessionStorage.getItem("login");
-    if (loggedin) {
+    if (loggedin == true) {
         var who = sessionStorage.getItem("who");
         document.getElementById("login").style.display = "none";
         document.getElementById("name").style.display = "block";
