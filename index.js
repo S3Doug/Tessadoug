@@ -1,3 +1,6 @@
+sessionStorage.setItem("login", false);
+sessionStorage.setItem("who", "");
+
 
 /* a function to hash an input */
 function hash(str) {
@@ -40,11 +43,9 @@ async function check() {
 }
 
 /* passes the login information to the main page */
-async function checklogin() {
-    let loggedin = new Promise(function(yes) {
-        yes(sessionStorage.getItem("login"));
-    });
-    if (await loggedin == true) {
+function checklogin() {
+    let loggedin = sessionStorage.getItem("login");
+    if (loggedin == true) {
         var who = sessionStorage.getItem("who");
         document.getElementById("login").style.display = "none";
         document.getElementById("name").style.display = "block";
@@ -54,8 +55,8 @@ async function checklogin() {
 
 /* logs the user out */
 function logout() {
-    sessionStorage.removeItem("login");
-    sessionStorage.removeItem("who");
+    sessionStorage.setItem("login", false);
+    sessionStorage.setItem("who", "");
     document.getElementById("login").style.display = "block";
     document.getElementById("name").style.display = "none";
 }
