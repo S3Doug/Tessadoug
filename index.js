@@ -66,7 +66,7 @@ function logout() {
 }
 
 function loggedin() {
-    document.getElementById("dropdown").classList.toggle("show");
+    document.getElementById("dropdown").style.display = "block";
 }
 
 
