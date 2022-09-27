@@ -41,7 +41,7 @@ async function check() {
 
 /* passes the login information to the main page */
 function checklogin() {
-    var loggedin = sessionStorage.getItem("login");
+    let loggedin = sessionStorage.getItem("login");
     if (loggedin == true) {
         var who = sessionStorage.getItem("who");
         document.getElementById("login").style.display = "none";
